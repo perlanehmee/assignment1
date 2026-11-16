@@ -62,7 +62,7 @@ public abstract class Car implements Movable {
     public void stopEngine() {
         this.currentSpeed = 0;
     }
-    public abstract double speedFactor();
+    protected abstract double speedFactor();
 
     protected void incrementSpeed(double amount){
         double newSpeed = getCurrentSpeed() + speedFactor() * amount;
